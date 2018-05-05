@@ -9,53 +9,54 @@
 	<form>
 		<div>
 			<label for="fname">First Name:
-				<input type="text" name="fname" id="fname" required>
+				<input type="text" name="fname" placeholder="John" id="fname" required>
 			</label> 
 			<label for="lname">Last Name:
-				<input type="text" name="lname" id="lname" required>
+				<input type="text" name="lname" placeholder="Smith" id="lname" required>
 			</label> 
 		</div>
 
 		<div>
-			<label>Male 
-				<input type="radio" name="sex" value="male">
+			<label for="male">Male 
+				<input type="radio" name="sex" id="male" value="male">
 			</label> 
-			<label>Female 
-				<input type="radio" name="sex" value="female">
+			<label for="female">Female 
+				<input type="radio" name="sex" id="female" value="female">
 			</label> 
-			<label>Other
-				<input type="radio" name="sex" value="other">
+			<label for="other">Other
+				<input type="radio" name="sex" id="other" value="other">
 			</label> 
 		</div>
 
 		<div>
 			<label for="email">Email:
-				<input type="email" name="email" id="email" required>
+				<input type="email" name="email" placeholder="your email" id="email" required>
 			</label> 
 			<label for="password">Password:
-				<input type="password" name="password" id="password" required minlength="5" maxlength="10">
+				<input type="password" name="password" placeholder="your password" id="password" required minlength="5" maxlength="10"> <!-- pattern=".{5,10}" title="5 to 10 characters" is more compatible with most browsers -->
 			</label> 
 		</div>	
 
 		<div>
-			<label>Birthday:</label> 
-			<select name=>
-				<option selected hidden>Month</option>
-				<option>Jan</option>
-				<option>Feb</option>
-				<option>Mar</option>
+			<!-- Normally we'd have a label for each field, but since these 3 select drop downs go together, we'll just use one and make it match up to the first select field (month) -->
+			<label for="birthday-month">Birthday:</label> 
+			<select name="birthday-month" id="birthday-month">
+				<option value="0" selected hidden>Month</option>
+				<option value="january">Jan</option>
+				<option value="february">Feb</option>
+				<option value="march">Mar</option>
 			</select>
-			<select>
-				<option selected hidden>Day</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
+			<select name="birthday-day" id="birthday-day">
+				<option value="0" selected hidden>Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
 			</select>
-			<select>
-				<option selected hidden>Year</option>
-				<option>1990</option>
-				<option>1991</option>
-				<option>1992</option>
+			<select name="birthday-year" id="birthday-year">
+				<option value="0" selected hidden>Year</option>
+				<option value="1990">1990</option>
+				<option value="1991">1991</option>
+				<option value="1992">1992</option>
 			</select>
 		</div>
 
