@@ -1,0 +1,26 @@
+body {
+	border: 15px solid #bdc3c7;
+	margin: 15px 250px;
+	padding: 15px;
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+}
+
+.date {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #3498db;
+}
+
+h2 {
+	color: #2c3e50;
+}
+
+.specialParagraph {
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}
+
+hr{
+	border-color: rgb(245,245,245, 0.25)
+}
